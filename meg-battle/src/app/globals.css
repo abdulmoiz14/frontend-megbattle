@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.bg-gradient-main {
+  background: linear-gradient(to right, #0a2540, #1c3f60, #2978a0);
+}
+
+.radial-gradient-overlay {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6), transparent);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.float {
+  animation: float 1s ease-out;
+}
